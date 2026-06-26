@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Admin - Bolão da LENZE</title>
+  <title>Dashboard Admin - Bolão da Lenze</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
@@ -12,7 +12,7 @@
     
     <div id="auth-section" class="auth-panel">
       <div class="header">
-        <h1>Bolão da <span>LENZE</span></h1>
+        <h1>Bolão da <span>Lenze</span></h1>
         <p>Acesso Administrativo Restrito</p>
       </div>
       <div class="card" style="margin-top: 16px; max-width: 400px; margin-left: auto; margin-right: auto; padding: 24px;">
@@ -25,7 +25,7 @@
 
     <div id="admin-section" class="admin-panel" style="display: none;">
       <div class="header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding: 18px;">
-        <h1 style="font-size: 1.8rem;">Painel de <span>Controle</span></h1>
+        <h1 style="font-size: 1.8rem;">Painel de <span>Controle - LENZE</span></h1>
         <button id="btn-logout" style="background: none; border: none; color: #ef4444; font-weight: 700; cursor: pointer; padding: 8px; font-size: 1rem;">Sair</button>
       </div>
 
@@ -62,19 +62,8 @@
           <h2 style="font-size: 1.4rem; margin-bottom: 8px;">Placares Oficiais</h2>
           <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px;">Preencha os jogos que já terminaram. Deixe vazio os que não ocorreram.</p>
           
-          <div class="modal-jogos" style="max-width: 500px;">
-            <div class="linha-jogo">
-              <span style="color: var(--text-muted);">BRA x MAR</span>
-              <div><input type="number" id="real-j1-a" class="input-edit-gol"> X <input type="number" id="real-j1-b" class="input-edit-gol"></div>
-            </div>
-            <div class="linha-jogo">
-              <span style="color: var(--text-muted);">BRA x HAI</span>
-              <div><input type="number" id="real-j2-a" class="input-edit-gol"> X <input type="number" id="real-j2-b" class="input-edit-gol"></div>
-            </div>
-            <div class="linha-jogo">
-              <span style="color: var(--text-muted);">SCO x BRA</span>
-              <div><input type="number" id="real-j3-a" class="input-edit-gol"> X <input type="number" id="real-j3-b" class="input-edit-gol"></div>
-            </div>
+          <div class="modal-jogos" style="max-width: 500px; max-height: 350px; overflow-y: auto;">
+            <div id="container-jogos-reais"></div>
           </div>
 
           <button id="btn-salvar-calcular" class="btn" style="margin-top: 24px;">Salvar Regras e Recalcular Ranking Geral</button>
@@ -92,10 +81,8 @@
         <label style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Nome do Apostador</label>
         <input type="text" id="edit-nome" class="input-nome" style="padding: 12px; margin-top: 4px;">
       </div>
-      <div class="modal-jogos">
-        <div class="linha-jogo"><span style="color: var(--text-muted);">BRA x MAR</span><div><input type="number" id="edit-j1-a" class="input-edit-gol" min="0"> X <input type="number" id="edit-j1-b" class="input-edit-gol" min="0"></div></div>
-        <div class="linha-jogo"><span style="color: var(--text-muted);">BRA x HAI</span><div><input type="number" id="edit-j2-a" class="input-edit-gol" min="0"> X <input type="number" id="edit-j2-b" class="input-edit-gol" min="0"></div></div>
-        <div class="linha-jogo"><span style="color: var(--text-muted);">SCO x BRA</span><div><input type="number" id="edit-j3-a" class="input-edit-gol" min="0"> X <input type="number" id="edit-j3-b" class="input-edit-gol" min="0"></div></div>
+      <div class="modal-jogos" style="max-height: 350px; overflow-y: auto;">
+        <div id="container-jogos-edicao"></div>
       </div>
       <div class="modal-acoes">
         <button id="btn-cancelar-edicao" class="btn" style="background: #e2e8f0; color: #475569;">Cancelar</button>
