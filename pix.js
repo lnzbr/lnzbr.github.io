@@ -3,7 +3,7 @@ function formatarPIX(txid) {
   const MINHA_CHAVE_PIX = "lucasvascon@outlook.com"; 
   const NOME_RECEBEDOR = "LUCAS_EDUARDO_DE_LIMA_VAS"; 
   const CIDADE_RECEBEDOR = "CAMPINAS";          
-  const VALOR_APOSTA = "20.00";                 
+  const VALOR_APOSTA = "10.00";                 
 
   const gerarTLV = (id, valor) => {
     const strValor = String(valor);
