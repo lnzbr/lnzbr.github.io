@@ -1,6 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getFirestore, collection, addDoc, getDocs, query, where, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
+
 const firebaseConfig = {
   apiKey: "AIzaSyAM3mDUQzeIjwhppbG54UzNTpRdZne7DTw",
   authDomain: "bolao-da-lenze.firebaseapp.com",
