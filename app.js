@@ -15,11 +15,12 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 const nomesJogos = [
-  "África do Sul x Canadá", "Brasil x Japão", "Alemanha x 3ABCDF", "Países Baixos x Marrocos",
-  "Costa do Marfim x 2I", "1I x 3CDFGH", "México x 3CEFHI", "1L x 3EHIJK",
-  "1G x 3AEHIJ", "EUA x Bósnia e Herzegovina", "1H x 2J", "2K x 2L",
-  "Suíça x 3EFGIJ", "Austrália x 2G", "Argentina x 2H", "1K x 3DEIJL"
+  "África do Sul x Canadá", "Brasil x Japão", "Alemanha x Paraguai", "Países Baixos x Marrocos",
+  "Costa do Marfim x Noruega", "França x Suécia", "México x 3CEFHI", "1L x 3EHIJK",
+  "Bélgica x 3AEHIJ", "EUA x Bósnia e Herzegovina", "Espanha x 2J", "2K x 2L",
+  "Suíça x 3EFGIJ", "Austrália x Egito", "Argentina x Cabo Verde", "1K x 3DEIJL"
 ];
+
 
 document.getElementById('tab-fazer-aposta').addEventListener('click', (e) => alternarAbasApp('aposta', e.target));
 document.getElementById('tab-ranking').addEventListener('click', (e) => { alternarAbasApp('ranking', e.target); carregarRanking(); });
