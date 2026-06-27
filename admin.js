@@ -19,10 +19,10 @@ let filtroStatusAtivo = "pendente";
 let memoriaApostas = {};
 
 const nomesJogosAdmin = [
-  "África do Sul x Canadá", "Brasil x Japão", "Alemanha x Paraguai", "Países Baixos x Marrocos",
-  "Costa do Marfim x Noruega", "França x Suécia", "México x 3CEFHI", "1L x 3EHIJK",
-  "Bélgica x 3AEHIJ", "EUA x Bósnia e Herzegovina", "Espanha x 2J", "2K x 2L",
-  "Suíça x 3EFGIJ", "Austrália x Egito", "Argentina x Cabo Verde", "1K x 3DEIJL"
+  "África do Sul x Canadá", "Brasil x Japão", "Alemanha x Paraguai", "Holanda x Marrocos",
+  "Costa do Marfim x Noruega", "França x Suécia", "México x Equador", "Inglaterra x 3EHIJK",
+  "Bélgica x 3AEHIJ", "EUA x Bósnia e Herzegovina", "Espanha x 2J", "2K x Croácia",
+  "Suíça x 3EFGIJ", "Austrália x Egito", "Argentina x Cabo Verde", "1K x Gana"
 ];
 
 
