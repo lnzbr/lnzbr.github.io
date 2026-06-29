@@ -56,7 +56,7 @@ document.getElementById('btn-gerar').addEventListener('click', async () => {
     return;
   }
 
-  const dataLimite = new Date("2026-06-28T16:00:00-03:00");
+  const dataLimite = new Date("2026-06-29T14:00:00-03:00");
   if (new Date() > dataLimite) {
     alert("⚠️ Apostas Encerradas! O primeiro jogo dos 16-Avos já começou.");
     return; 
